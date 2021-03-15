@@ -1,7 +1,7 @@
 # mysql_orchestrator
 
-![pdk-validate](https://github.com/ncsa/puppet-profile_audit/workflows/pdk-validate/badge.svg)
-![yamllint](https://github.com/ncsa/puppet-profile_audit/workflows/yamllint/badge.svg)
+![pdk-validate](https://github.com/ncsa/puppet-mysql_orchestrator/workflows/pdk-validate/badge.svg)
+![yamllint](https://github.com/ncsa/puppet-mysql_orchestrator/workflows/yamllint/badge.svg)
 
 Install and configure the MySQL orchestrator (https://github.com/openark/orchestrator).
 
