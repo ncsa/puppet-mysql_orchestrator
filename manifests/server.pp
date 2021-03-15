@@ -19,7 +19,7 @@ class mysql_orchestrator::server (
   ensure_packages($preq_pkgs, {'ensure' => 'present'})
   ensure_packages('orchestrator', {'ensure' => 'present', 'provider' => 'rpm', 'source' => $rpm_url, })
   ensure_packages('orchestrator-cli', {'ensure' => 'present', 'provider' => 'rpm', 'source' => $cli_rpm_url, })
-  include ::mysql_orchestrator_client
+  include ::mysql_orchestrator::client
 
   Package[$preq_pkgs] -> Package['orchestrator'] -> Package['orchestrator-cli'] -> Package['orchestrator-client']
 
