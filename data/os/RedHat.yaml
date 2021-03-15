@@ -1,0 +1,8 @@
+---
+mysql_orchestrator::client::preq_pkgs:
+  - "jq"
+mysql_orchestrator::client::rpm_url: "https://github.com/openark/orchestrator/releases/download/v3.2.3/orchestrator-client-3.2.3-1.x86_64.rpm"
+mysql_orchestrator::server::preq_pkgs:
+  - "jq"
+mysql_orchestrator::server::rpm_url: "https://github.com/openark/orchestrator/releases/download/v3.2.3/orchestrator-3.2.3-1.x86_64.rpm"
+mysql_orchestrator::server::cli_rpm_url: "https://github.com/openark/orchestrator/releases/download/v3.2.3/orchestrator-cli-3.2.3-1.x86_64.rpm"
