@@ -7,6 +7,7 @@
 ### Classes
 
 * [`mysql_orchestrator`](#mysql_orchestrator): Install and configure the MySQL orchestrator
+* [`mysql_orchestrator::client`](#mysql_orchestratorclient): Install and configure the MySQL orchestrator client
 * [`mysql_orchestrator::server`](#mysql_orchestratorserver): Install and configure the MySQL orchestrator server
 
 ## Classes
@@ -22,6 +23,51 @@ Install and configure the MySQL orchestrator
 ```puppet
 include mysql_orchestrator
 ```
+
+### <a name="mysql_orchestratorclient"></a>`mysql_orchestrator::client`
+
+Install and configure the MySQL orchestrator client
+
+#### Examples
+
+##### 
+
+```puppet
+include mysql_orchestrator::client
+```
+
+#### Parameters
+
+The following parameters are available in the `mysql_orchestrator::client` class:
+
+* [`preq_pkgs`](#preq_pkgs)
+* [`rpm_url`](#rpm_url)
+* [`profile_csh_content`](#profile_csh_content)
+* [`profile_sh_content`](#profile_sh_content)
+
+##### <a name="preq_pkgs"></a>`preq_pkgs`
+
+Data type: `Array[String]`
+
+
+
+##### <a name="rpm_url"></a>`rpm_url`
+
+Data type: `String`
+
+
+
+##### <a name="profile_csh_content"></a>`profile_csh_content`
+
+Data type: `String`
+
+
+
+##### <a name="profile_sh_content"></a>`profile_sh_content`
+
+Data type: `String`
+
+
 
 ### <a name="mysql_orchestratorserver"></a>`mysql_orchestrator::server`
 
