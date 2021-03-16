@@ -7,7 +7,7 @@ mysql_orchestrator::client::profile_sh_content: |
   export ORCHESTRATOR_API="http://USERNAME:PASSWORD@HOSTNAME1:3000/api http://USERNAME:PASSWORD@HOSTNAME2:3000/api http://USERNAME:PASSWORD@HOSTNAME3:3000/api"
 mysql_orchestrator::server::conf_json: |
   {
-    "Debug": true,
+    "Debug": false,
     "EnableSyslog": false,
     "ListenAddress": ":3000",
     "RaftEnabled": true,
