@@ -23,7 +23,7 @@ class mysql_orchestrator::server (
     'ensure'   => 'latest',
     'provider' => 'rpm',
     'source'   => $rpm_url,
-    'notify'   => 'Service["orchestrator"]',
+    'notify'   => 'Service[\'orchestrator\']',
   })
   ensure_packages('orchestrator-cli', {
     'ensure'   => 'latest',
