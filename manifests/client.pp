@@ -13,7 +13,7 @@ class mysql_orchestrator::client (
 
   # INSTALL orchestrator-client PACKAGES
   ensure_packages($preq_pkgs, {'ensure' => 'present'})
-  ensure_packages('orchestrator-client', {'ensure' => 'present', 'provider' => 'rpm', 'source' => $rpm_url, })
+  ensure_packages('orchestrator-client', {'ensure' => 'latest', 'provider' => 'rpm', 'source' => $rpm_url, })
 
   Package[$preq_pkgs] -> Package['orchestrator-client']
 
