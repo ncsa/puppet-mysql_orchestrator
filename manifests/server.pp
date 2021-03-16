@@ -15,6 +15,9 @@ class mysql_orchestrator::server (
   Hash          $service_subnets,
 ) {
 
+  Package {
+    notify => Service['orchestrator'],
+  }
   # INSTALL orchestrator PACKAGES
   ensure_packages($preq_pkgs, {
     'ensure' => 'present',
@@ -23,7 +26,7 @@ class mysql_orchestrator::server (
     'ensure'   => 'latest',
     'provider' => 'rpm',
     'source'   => $rpm_url,
-    'notify'   => "Service['orchestrator']",
+#    'notify'   => "Service['orchestrator']",
   })
   ensure_packages('orchestrator-cli', {
     'ensure'   => 'latest',
